@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="section-sm">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <div class="title-bordered mb-5 d-flex align-items-center">
+               <h1 class="h4">Our Terms And Conditions</h1>
+            </div>
+            <div class="content">
+               {% for term in form %}
+                  <h4>{{ term.title }}</h4>
+                  <p>{{ term.content }}</p>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}

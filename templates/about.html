@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<section class="section-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% if about %}
+                    <h1>{{ about.0.title }}</h1>
+                    <img src="{{ about.0.image.url }}" class=" w-100 mb-4 rounded-lg" alt="author"  height="700">
+                    <div class="content">
+                        <p></p>
+                        {{ about.0.description }}
+                    </div>
+                {% else %}
+                    <p>No about information available.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
