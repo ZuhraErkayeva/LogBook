@@ -13,22 +13,22 @@
                 <article class="row mb-5">
                     <div class="col-md-4 mb-4 mb-md-0">
 <div id="postSlider" class="carousel slide slider-sm" data-ride="carousel">
-    <div class="carousel-inner">
+    <div class="post-slider">
         {% for image in p.images.all %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img loading="lazy" src="{{ image.image.url }}" class="img-fluid" alt="post-thumb" style="height:200px; object-fit: cover;">
+                <img loading="lazy" src="{{ image.image.url }}" class="img-fluid" alt="post-thumb" style="height:200px; width:210px; object-fit: cover;">
             </div>
         {% endfor %}
     </div>
     <!-- Slider nazorat tugmalari -->
-    <a class="carousel-control-prev" href="#postSlider" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#postSlider" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+<!--    <a class="carousel-control-prev" href="#postSlider" role="button" data-slide="prev">-->
+<!--        <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--        <span class="sr-only">Previous</span>-->
+<!--    </a>-->
+<!--    <a class="carousel-control-next" href="#postSlider" role="button" data-slide="next">-->
+<!--        <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--        <span class="sr-only">Next</span>-->
+<!--    </a>-->
 </div>
 
                     </div>
