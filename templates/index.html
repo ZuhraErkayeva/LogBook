@@ -16,7 +16,7 @@
     <div class="post-slider">
         {% for image in p.images.all %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                <img loading="lazy" src="{{ image.image.url }}" class="img-fluid" alt="post-thumb" style="height:200px; width:210px; object-fit: cover;">
+                <img loading="lazy" src="{{ image.image.url }}" class="img-fluid" alt="post-thumb" style="height:200px; width:350px; object-fit: cover;">
             </div>
         {% endfor %}
     </div>
